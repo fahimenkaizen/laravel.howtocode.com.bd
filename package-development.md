@@ -199,22 +199,3 @@ composer update
 php artisan vendor:publish
 ```
 
-এবার প্যাকেজের **MyPackageClass** টি অ্যাপ্লিকেশনের মধ্যে ব্যাবহারের জন্য নিচের মত করে লিখতে হবে।
-
-```php
-$myPackage = $this->app['MyPackageClass'];
-echo $myPackage::sayHi();
-```
-
-অথবা নিচের মত করেও সরাসরি ব্যাবহার করা যাবে।
-
-```php
-echo \MyVendor\MyPackage\MyPackageClass::sayHi();
-```
-
-লারাভেলের প্যাকেজ ডেভেলপমেন্ট সম্পর্কে বিস্তারিত জানতে [এই লিঙ্ক](http://laravel.com/docs/5.1/packages) অনুসরণ করবেন।
-লারাভেলের সার্ভিস প্রোভাইডার সম্পর্কে বিস্তারিত জানতে [এই লিঙ্ক](http://laravel.com/docs/5.1/providers) অনুসরণ করবেন।
-সার্ভিস প্রোভাইডার সম্পর্কে বিস্তারিত জানতে [এই লিঙ্ক](http://laravel.com/docs/5.1/container) অনুসরণ করবেন।
-
-এছাড়াও আপনারা আমার ডেভেলপ করা কিছু প্যাকেজ দেখে আইডিয়া নিতে পারেন।
-https://github.com/appzcoder/
